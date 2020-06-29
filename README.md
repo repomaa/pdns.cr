@@ -93,8 +93,8 @@ end
 
 See [the documentation](https://repomaa.github.io/pdns.cr) for more information.
 Especially the `Pdns::API::Endpoint`. Most endpoints are scoped under either
-`Pdns::API::Endpoints::Server` or `Pdns::API::Endpoints::Zone` (which is in turn
-scoped under `Pdns::API::Endpoints::Server`). You can access the scoped
+`Pdns::API::Endpoints::Servers` or `Pdns::API::Endpoints::Zones` (which is in turn
+scoped under `Pdns::API::Endpoints::Servers`). You can access the scoped
 endpoints by using the `#with(id)` method of an endpoint. It will be passed as a
 block variable.
 
