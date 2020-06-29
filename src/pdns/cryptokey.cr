@@ -1,6 +1,6 @@
 require "json"
 
-module Pdns::Models
+module Pdns
   class Cryptokey
     include JSON::Serializable
 
