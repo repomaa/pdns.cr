@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.34.0">
+<meta name="crystal_docs.project_version" content="HEAD">
+<meta name="crystal_docs.project_name" content="pdns">
+
+
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/doc.js"></script>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+
+  <meta id="repository-name" content="pdns">
+  <title>Pdns::RRSet - pdns HEAD</title>
+  <script type="text/javascript">
+    CrystalDocs.base_path = "../";
+  </script>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="project-summary">
+      <h1 class="project-name">
+        <a href="../index.html">
+          pdns
+        </a>
+      </h1>
+
+      <span class="project-version">
+        HEAD
+      </span>
+    </div>
+  </div>
+
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class="parent open current" data-id="pdns/Pdns" data-name="pdns">
+      <a href="../Pdns.html">Pdns</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="pdns/Pdns/API" data-name="pdns::api">
+      <a href="../Pdns/API.html">API</a>
+      
+        <ul>
+  
+  <li class=" " data-id="pdns/Pdns/API/Endpoint" data-name="pdns::api::endpoint">
+      <a href="../Pdns/API/Endpoint.html">Endpoint</a>
+      
+    </li>
+  
+  <li class="parent " data-id="pdns/Pdns/API/Endpoints" data-name="pdns::api::endpoints">
+      <a href="../Pdns/API/Endpoints.html">Endpoints</a>
+      
+        <ul>
+  
+  <li class=" " data-id="pdns/Pdns/API/Endpoints/Cache" data-name="pdns::api::endpoints::cache">
+      <a href="../Pdns/API/Endpoints/Cache.html">Cache</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/API/Endpoints/Cryptokeys" data-name="pdns::api::endpoints::cryptokeys">
+      <a href="../Pdns/API/Endpoints/Cryptokeys.html">Cryptokeys</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/API/Endpoints/Metadata" data-name="pdns::api::endpoints::metadata">
+      <a href="../Pdns/API/Endpoints/Metadata.html">Metadata</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/API/Endpoints/Searching" data-name="pdns::api::endpoints::searching">
+      <a href="../Pdns/API/Endpoints/Searching.html">Searching</a>
+      
+    </li>
+  
+  <li class="parent " data-id="pdns/Pdns/API/Endpoints/Servers" data-name="pdns::api::endpoints::servers">
+      <a href="../Pdns/API/Endpoints/Servers.html">Servers</a>
+      
+        <ul>
+  
+  <li class=" " data-id="pdns/Pdns/API/Endpoints/Servers/Scoped" data-name="pdns::api::endpoints::servers::scoped">
+      <a href="../Pdns/API/Endpoints/Servers/Scoped.html">Scoped</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/API/Endpoints/Statistics" data-name="pdns::api::endpoints::statistics">
+      <a href="../Pdns/API/Endpoints/Statistics.html">Statistics</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/API/Endpoints/TSIGKeys" data-name="pdns::api::endpoints::tsigkeys">
+      <a href="../Pdns/API/Endpoints/TSIGKeys.html">TSIGKeys</a>
+      
+    </li>
+  
+  <li class="parent " data-id="pdns/Pdns/API/Endpoints/Zones" data-name="pdns::api::endpoints::zones">
+      <a href="../Pdns/API/Endpoints/Zones.html">Zones</a>
+      
+        <ul>
+  
+  <li class=" " data-id="pdns/Pdns/API/Endpoints/Zones/Scoped" data-name="pdns::api::endpoints::zones::scoped">
+      <a href="../Pdns/API/Endpoints/Zones/Scoped.html">Scoped</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/CacheFlushResult" data-name="pdns::cacheflushresult">
+      <a href="../Pdns/CacheFlushResult.html">CacheFlushResult</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/Comment" data-name="pdns::comment">
+      <a href="../Pdns/Comment.html">Comment</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/Cryptokey" data-name="pdns::cryptokey">
+      <a href="../Pdns/Cryptokey.html">Cryptokey</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/DNSRecordType" data-name="pdns::dnsrecordtype">
+      <a href="../Pdns/DNSRecordType.html">DNSRecordType</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/MapStatisticItem" data-name="pdns::mapstatisticitem">
+      <a href="../Pdns/MapStatisticItem.html">MapStatisticItem</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/Metadata" data-name="pdns::metadata">
+      <a href="../Pdns/Metadata.html">Metadata</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/Record" data-name="pdns::record">
+      <a href="../Pdns/Record.html">Record</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/RingStatisticItem" data-name="pdns::ringstatisticitem">
+      <a href="../Pdns/RingStatisticItem.html">RingStatisticItem</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="pdns/Pdns/RRSet" data-name="pdns::rrset">
+      <a href="../Pdns/RRSet.html">RRSet</a>
+      
+        <ul>
+  
+  <li class=" " data-id="pdns/Pdns/RRSet/ChangeType" data-name="pdns::rrset::changetype">
+      <a href="../Pdns/RRSet/ChangeType.html">ChangeType</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="pdns/Pdns/SearchResult" data-name="pdns::searchresult">
+      <a href="../Pdns/SearchResult.html">SearchResult</a>
+      
+        <ul>
+  
+  <li class=" " data-id="pdns/Pdns/SearchResult/ObjectType" data-name="pdns::searchresult::objecttype">
+      <a href="../Pdns/SearchResult/ObjectType.html">ObjectType</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/Server" data-name="pdns::server">
+      <a href="../Pdns/Server.html">Server</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/SimpleStatisticItem" data-name="pdns::simplestatisticitem">
+      <a href="../Pdns/SimpleStatisticItem.html">SimpleStatisticItem</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/StatisticItem" data-name="pdns::statisticitem">
+      <a href="../Pdns/StatisticItem.html">StatisticItem</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/TSIGKey" data-name="pdns::tsigkey">
+      <a href="../Pdns/TSIGKey.html">TSIGKey</a>
+      
+    </li>
+  
+  <li class="parent " data-id="pdns/Pdns/Zone" data-name="pdns::zone">
+      <a href="../Pdns/Zone.html">Zone</a>
+      
+        <ul>
+  
+  <li class=" " data-id="pdns/Pdns/Zone/Kind" data-name="pdns::zone::kind">
+      <a href="../Pdns/Zone/Kind.html">Kind</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> Pdns::RRSet
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../Pdns/RRSet.html">Pdns::RRSet</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+  <h2>
+    <a id="overview" class="anchor" href="#overview">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Overview
+  </h2>
+
+  <p>This represents a Resource Record Set (all records with the same name and
+type).</p>
+
+
+
+
+
+  <h2>
+    <a id="included-modules" class="anchor" href="#included-modules">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Included Modules
+  </h2>
+  <ul class="other-types-list">
+    
+      <li class="other-type">JSON::Serializable</li>
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="defined-in" class="anchor" href="#defined-in">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Defined in:
+  </h2>
+  
+    
+      <a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/rrset.cr#L10" target="_blank">
+        pdns/rrset.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+
+
+  <h2>
+    <a id="constructors" class="anchor" href="#constructors">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Constructors
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new(pull:JSON::PullParser)-class-method" class="signature"><strong>.new</strong>(pull : JSON::PullParser)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#new(*,name,type,changetype=ChangeType::Replace,ttl=nil,records=nil,comments=nil)-class-method" class="signature"><strong>.new</strong>(*, name, type, changetype = <span class="t">ChangeType</span><span class="t">::</span><span class="t">Replace</span>, ttl = <span class="n">nil</span>, records = <span class="n">nil</span>, comments = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Initialize an RRSet with the given attributes</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+  <h2>
+    <a id="instance-method-summary" class="anchor" href="#instance-method-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Summary
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#changetype:ChangeType?-instance-method" class="signature"><strong>#changetype</strong> : ChangeType?</a>
+        
+          <div class="summary"><p>MUST be added when updating the RRSet.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#changetype=(changetype:ChangeType?)-instance-method" class="signature"><strong>#changetype=</strong>(changetype : ChangeType?)</a>
+        
+          <div class="summary"><p>MUST be added when updating the RRSet.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#comments:Array(Comment)?-instance-method" class="signature"><strong>#comments</strong> : Array(Comment)?</a>
+        
+          <div class="summary"><p>List of Comment.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#comments=(comments:Array(Comment)?)-instance-method" class="signature"><strong>#comments=</strong>(comments : Array(Comment)?)</a>
+        
+          <div class="summary"><p>List of Comment.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#delete!-instance-method" class="signature"><strong>#delete!</strong></a>
+        
+          <div class="summary"><p>Sets changetype to <code><a href="../Pdns/RRSet/ChangeType.html#Delete">ChangeType::Delete</a></code></p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#name:String-instance-method" class="signature"><strong>#name</strong> : String</a>
+        
+          <div class="summary"><p>Name for record set (e.g.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#name=(name:String)-instance-method" class="signature"><strong>#name=</strong>(name : String)</a>
+        
+          <div class="summary"><p>Name for record set (e.g.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#records:Array(Record)?-instance-method" class="signature"><strong>#records</strong> : Array(Record)?</a>
+        
+          <div class="summary"><p>All records in this RRSet.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#records=(records:Array(Record)?)-instance-method" class="signature"><strong>#records=</strong>(records : Array(Record)?)</a>
+        
+          <div class="summary"><p>All records in this RRSet.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#replace!-instance-method" class="signature"><strong>#replace!</strong></a>
+        
+          <div class="summary"><p>Sets changetype to <code><a href="../Pdns/RRSet/ChangeType.html#Replace">ChangeType::Replace</a></code></p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ttl:UInt32?-instance-method" class="signature"><strong>#ttl</strong> : UInt32?</a>
+        
+          <div class="summary"><p>DNS TTL of the records, in seconds.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ttl=(ttl:UInt32?)-instance-method" class="signature"><strong>#ttl=</strong>(ttl : UInt32?)</a>
+        
+          <div class="summary"><p>DNS TTL of the records, in seconds.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#type:DNSRecordType-instance-method" class="signature"><strong>#type</strong> : DNSRecordType</a>
+        
+          <div class="summary"><p>Type of this record (e.g.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#type=(type:DNSRecordType)-instance-method" class="signature"><strong>#type=</strong>(type : DNSRecordType)</a>
+        
+          <div class="summary"><p>Type of this record (e.g.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>
+    <a id="constructor-detail" class="anchor" href="#constructor-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Constructor Detail
+  </h2>
+  
+    <div class="entry-detail" id="new(pull:JSON::PullParser)-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(pull : JSON::PullParser)
+
+        <a class="method-permalink" href="#new(pull:JSON::PullParser)-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/rrset.cr#L11" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="new(*,name,type,changetype=ChangeType::Replace,ttl=nil,records=nil,comments=nil)-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(*, name, type, changetype = <span class="t">ChangeType</span><span class="t">::</span><span class="t">Replace</span>, ttl = <span class="n">nil</span>, records = <span class="n">nil</span>, comments = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#new(*,name,type,changetype=ChangeType::Replace,ttl=nil,records=nil,comments=nil)-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Initialize an RRSet with the given attributes</p>
+
+<pre><code><span class="t">RRSet</span>.<span class="k">new</span>(
+  name: <span class="s">&quot;www.powerdns.com.&quot;</span>,
+  <span class="k">type</span>: <span class="s">&quot;A&quot;</span>,
+  ttl: <span class="n">3600_u32</span>,
+  records: [<span class="t">Record</span>.<span class="k">new</span>(<span class="s">&quot;127.0.0.1&quot;</span>)],
+  comments: [<span class="t">Comment</span>.<span class="k">new</span>(content: <span class="s">&quot;Testing&quot;</span>, account: <span class="s">&quot;Tester&quot;</span>)]
+)</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/rrset.cr#L72" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+  <h2>
+    <a id="instance-method-detail" class="anchor" href="#instance-method-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Detail
+  </h2>
+  
+    <div class="entry-detail" id="changetype:ChangeType?-instance-method">
+      <div class="signature">
+        
+        def <strong>changetype</strong> : <a href="../Pdns/RRSet/ChangeType.html">ChangeType</a>?
+
+        <a class="method-permalink" href="#changetype:ChangeType?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>MUST be added when updating the RRSet. Must be <code><a href="../Pdns/RRSet/ChangeType.html#Replace">ChangeType::Replace</a></code> or
+<code><a href="../Pdns/RRSet/ChangeType.html#Delete">ChangeType::Delete</a></code>.</p>
+
+<p>With <code><a href="../Pdns/RRSet/ChangeType.html#Delete">ChangeType::Delete</a></code>, all existing RRs matching name and type will
+be deleted, including all comments.</p>
+
+<p>With <code><a href="../Pdns/RRSet/ChangeType.html#Replace">ChangeType::Replace</a></code>: when records is present, all existing RRs
+matching name and type will be deleted, and then new records given in
+records will be created.  If no records are left, any existing comments
+will be deleted as well.  When comments is present, all existing comments
+for the RRs matching name and type will be deleted, and then new comments
+given in comments will be created.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/rrset.cr#L35" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="changetype=(changetype:ChangeType?)-instance-method">
+      <div class="signature">
+        
+        def <strong>changetype=</strong>(changetype : <a href="../Pdns/RRSet/ChangeType.html">ChangeType</a>?)
+
+        <a class="method-permalink" href="#changetype=(changetype:ChangeType?)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>MUST be added when updating the RRSet. Must be <code><a href="../Pdns/RRSet/ChangeType.html#Replace">ChangeType::Replace</a></code> or
+<code><a href="../Pdns/RRSet/ChangeType.html#Delete">ChangeType::Delete</a></code>.</p>
+
+<p>With <code><a href="../Pdns/RRSet/ChangeType.html#Delete">ChangeType::Delete</a></code>, all existing RRs matching name and type will
+be deleted, including all comments.</p>
+
+<p>With <code><a href="../Pdns/RRSet/ChangeType.html#Replace">ChangeType::Replace</a></code>: when records is present, all existing RRs
+matching name and type will be deleted, and then new records given in
+records will be created.  If no records are left, any existing comments
+will be deleted as well.  When comments is present, all existing comments
+for the RRs matching name and type will be deleted, and then new comments
+given in comments will be created.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/rrset.cr#L35" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="comments:Array(Comment)?-instance-method">
+      <div class="signature">
+        
+        def <strong>comments</strong> : Array(<a href="../Pdns/Comment.html">Comment</a>)?
+
+        <a class="method-permalink" href="#comments:Array(Comment)?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>List of Comment.</p>
+
+<p>Must be empty when changetype is set to DELETE. An empty list results in
+deletion of all comments. modified_at is optional and defaults to the
+current server time.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/rrset.cr#L49" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="comments=(comments:Array(Comment)?)-instance-method">
+      <div class="signature">
+        
+        def <strong>comments=</strong>(comments : Array(<a href="../Pdns/Comment.html">Comment</a>)?)
+
+        <a class="method-permalink" href="#comments=(comments:Array(Comment)?)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>List of Comment.</p>
+
+<p>Must be empty when changetype is set to DELETE. An empty list results in
+deletion of all comments. modified_at is optional and defaults to the
+current server time.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/rrset.cr#L49" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="delete!-instance-method">
+      <div class="signature">
+        
+        def <strong>delete!</strong>
+
+        <a class="method-permalink" href="#delete!-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Sets changetype to <code><a href="../Pdns/RRSet/ChangeType.html#Delete">ChangeType::Delete</a></code></p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/rrset.cr#L57" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="name:String-instance-method">
+      <div class="signature">
+        
+        def <strong>name</strong> : String
+
+        <a class="method-permalink" href="#name:String-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Name for record set (e.g. "www.powerdns.com.")</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/rrset.cr#L14" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="name=(name:String)-instance-method">
+      <div class="signature">
+        
+        def <strong>name=</strong>(name : String)
+
+        <a class="method-permalink" href="#name=(name:String)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Name for record set (e.g. "www.powerdns.com.")</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/rrset.cr#L14" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="records:Array(Record)?-instance-method">
+      <div class="signature">
+        
+        def <strong>records</strong> : Array(<a href="../Pdns/Record.html">Record</a>)?
+
+        <a class="method-permalink" href="#records:Array(Record)?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>All records in this RRSet.</p>
+
+<p>When updating Records, this is the list of new records (replacing the old
+ones). Must be empty when changetype is set to <code>"DELETE"</code>. An empty list
+results in deletion of all records (and comments).</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/rrset.cr#L42" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="records=(records:Array(Record)?)-instance-method">
+      <div class="signature">
+        
+        def <strong>records=</strong>(records : Array(<a href="../Pdns/Record.html">Record</a>)?)
+
+        <a class="method-permalink" href="#records=(records:Array(Record)?)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>All records in this RRSet.</p>
+
+<p>When updating Records, this is the list of new records (replacing the old
+ones). Must be empty when changetype is set to <code>"DELETE"</code>. An empty list
+results in deletion of all records (and comments).</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/rrset.cr#L42" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="replace!-instance-method">
+      <div class="signature">
+        
+        def <strong>replace!</strong>
+
+        <a class="method-permalink" href="#replace!-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Sets changetype to <code><a href="../Pdns/RRSet/ChangeType.html#Replace">ChangeType::Replace</a></code></p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/rrset.cr#L52" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ttl:UInt32?-instance-method">
+      <div class="signature">
+        
+        def <strong>ttl</strong> : UInt32?
+
+        <a class="method-permalink" href="#ttl:UInt32?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>DNS TTL of the records, in seconds.
+MUST NOT be included when changetype is set to "DELETE”.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/rrset.cr#L21" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ttl=(ttl:UInt32?)-instance-method">
+      <div class="signature">
+        
+        def <strong>ttl=</strong>(ttl : UInt32?)
+
+        <a class="method-permalink" href="#ttl=(ttl:UInt32?)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>DNS TTL of the records, in seconds.
+MUST NOT be included when changetype is set to "DELETE”.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/rrset.cr#L21" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="type:DNSRecordType-instance-method">
+      <div class="signature">
+        
+        def <strong>type</strong> : <a href="../Pdns/DNSRecordType.html">DNSRecordType</a>
+
+        <a class="method-permalink" href="#type:DNSRecordType-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Type of this record (e.g. "A", "PTR", "MX")</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/rrset.cr#L17" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="type=(type:DNSRecordType)-instance-method">
+      <div class="signature">
+        
+        def <strong>type=</strong>(type : <a href="../Pdns/DNSRecordType.html">DNSRecordType</a>)
+
+        <a class="method-permalink" href="#type=(type:DNSRecordType)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Type of this record (e.g. "A", "PTR", "MX")</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/rrset.cr#L17" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>

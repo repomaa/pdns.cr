@@ -1,0 +1,1858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.34.0">
+<meta name="crystal_docs.project_version" content="HEAD">
+<meta name="crystal_docs.project_name" content="pdns">
+
+
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/doc.js"></script>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+
+  <meta id="repository-name" content="pdns">
+  <title>Pdns::Zone - pdns HEAD</title>
+  <script type="text/javascript">
+    CrystalDocs.base_path = "../";
+  </script>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="project-summary">
+      <h1 class="project-name">
+        <a href="../index.html">
+          pdns
+        </a>
+      </h1>
+
+      <span class="project-version">
+        HEAD
+      </span>
+    </div>
+  </div>
+
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class="parent open current" data-id="pdns/Pdns" data-name="pdns">
+      <a href="../Pdns.html">Pdns</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="pdns/Pdns/API" data-name="pdns::api">
+      <a href="../Pdns/API.html">API</a>
+      
+        <ul>
+  
+  <li class=" " data-id="pdns/Pdns/API/Endpoint" data-name="pdns::api::endpoint">
+      <a href="../Pdns/API/Endpoint.html">Endpoint</a>
+      
+    </li>
+  
+  <li class="parent " data-id="pdns/Pdns/API/Endpoints" data-name="pdns::api::endpoints">
+      <a href="../Pdns/API/Endpoints.html">Endpoints</a>
+      
+        <ul>
+  
+  <li class=" " data-id="pdns/Pdns/API/Endpoints/Cache" data-name="pdns::api::endpoints::cache">
+      <a href="../Pdns/API/Endpoints/Cache.html">Cache</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/API/Endpoints/Cryptokeys" data-name="pdns::api::endpoints::cryptokeys">
+      <a href="../Pdns/API/Endpoints/Cryptokeys.html">Cryptokeys</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/API/Endpoints/Metadata" data-name="pdns::api::endpoints::metadata">
+      <a href="../Pdns/API/Endpoints/Metadata.html">Metadata</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/API/Endpoints/Searching" data-name="pdns::api::endpoints::searching">
+      <a href="../Pdns/API/Endpoints/Searching.html">Searching</a>
+      
+    </li>
+  
+  <li class="parent " data-id="pdns/Pdns/API/Endpoints/Servers" data-name="pdns::api::endpoints::servers">
+      <a href="../Pdns/API/Endpoints/Servers.html">Servers</a>
+      
+        <ul>
+  
+  <li class=" " data-id="pdns/Pdns/API/Endpoints/Servers/Scoped" data-name="pdns::api::endpoints::servers::scoped">
+      <a href="../Pdns/API/Endpoints/Servers/Scoped.html">Scoped</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/API/Endpoints/Statistics" data-name="pdns::api::endpoints::statistics">
+      <a href="../Pdns/API/Endpoints/Statistics.html">Statistics</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/API/Endpoints/TSIGKeys" data-name="pdns::api::endpoints::tsigkeys">
+      <a href="../Pdns/API/Endpoints/TSIGKeys.html">TSIGKeys</a>
+      
+    </li>
+  
+  <li class="parent " data-id="pdns/Pdns/API/Endpoints/Zones" data-name="pdns::api::endpoints::zones">
+      <a href="../Pdns/API/Endpoints/Zones.html">Zones</a>
+      
+        <ul>
+  
+  <li class=" " data-id="pdns/Pdns/API/Endpoints/Zones/Scoped" data-name="pdns::api::endpoints::zones::scoped">
+      <a href="../Pdns/API/Endpoints/Zones/Scoped.html">Scoped</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/CacheFlushResult" data-name="pdns::cacheflushresult">
+      <a href="../Pdns/CacheFlushResult.html">CacheFlushResult</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/Comment" data-name="pdns::comment">
+      <a href="../Pdns/Comment.html">Comment</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/Cryptokey" data-name="pdns::cryptokey">
+      <a href="../Pdns/Cryptokey.html">Cryptokey</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/DNSRecordType" data-name="pdns::dnsrecordtype">
+      <a href="../Pdns/DNSRecordType.html">DNSRecordType</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/MapStatisticItem" data-name="pdns::mapstatisticitem">
+      <a href="../Pdns/MapStatisticItem.html">MapStatisticItem</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/Metadata" data-name="pdns::metadata">
+      <a href="../Pdns/Metadata.html">Metadata</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/Record" data-name="pdns::record">
+      <a href="../Pdns/Record.html">Record</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/RingStatisticItem" data-name="pdns::ringstatisticitem">
+      <a href="../Pdns/RingStatisticItem.html">RingStatisticItem</a>
+      
+    </li>
+  
+  <li class="parent " data-id="pdns/Pdns/RRSet" data-name="pdns::rrset">
+      <a href="../Pdns/RRSet.html">RRSet</a>
+      
+        <ul>
+  
+  <li class=" " data-id="pdns/Pdns/RRSet/ChangeType" data-name="pdns::rrset::changetype">
+      <a href="../Pdns/RRSet/ChangeType.html">ChangeType</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="pdns/Pdns/SearchResult" data-name="pdns::searchresult">
+      <a href="../Pdns/SearchResult.html">SearchResult</a>
+      
+        <ul>
+  
+  <li class=" " data-id="pdns/Pdns/SearchResult/ObjectType" data-name="pdns::searchresult::objecttype">
+      <a href="../Pdns/SearchResult/ObjectType.html">ObjectType</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/Server" data-name="pdns::server">
+      <a href="../Pdns/Server.html">Server</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/SimpleStatisticItem" data-name="pdns::simplestatisticitem">
+      <a href="../Pdns/SimpleStatisticItem.html">SimpleStatisticItem</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/StatisticItem" data-name="pdns::statisticitem">
+      <a href="../Pdns/StatisticItem.html">StatisticItem</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/TSIGKey" data-name="pdns::tsigkey">
+      <a href="../Pdns/TSIGKey.html">TSIGKey</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="pdns/Pdns/Zone" data-name="pdns::zone">
+      <a href="../Pdns/Zone.html">Zone</a>
+      
+        <ul>
+  
+  <li class=" " data-id="pdns/Pdns/Zone/Kind" data-name="pdns::zone::kind">
+      <a href="../Pdns/Zone/Kind.html">Kind</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> Pdns::Zone
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../Pdns/Zone.html">Pdns::Zone</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+  <h2>
+    <a id="overview" class="anchor" href="#overview">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Overview
+  </h2>
+
+  <p>This represents an authoritative DNS Zone.</p>
+
+
+
+
+
+  <h2>
+    <a id="included-modules" class="anchor" href="#included-modules">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Included Modules
+  </h2>
+  <ul class="other-types-list">
+    
+      <li class="other-type">JSON::Serializable</li>
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="defined-in" class="anchor" href="#defined-in">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Defined in:
+  </h2>
+  
+    
+      <a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L6" target="_blank">
+        pdns/zone.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+
+
+  <h2>
+    <a id="constructors" class="anchor" href="#constructors">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Constructors
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new(pull:JSON::PullParser)-class-method" class="signature"><strong>.new</strong>(pull : JSON::PullParser)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#new(*,name,kind,rrsets=[]ofRRSet,masters=nil,dnssec=nil,nsec3param=nil,nsec3narrow=nil,presigned=nil,soa_edit=nil,soa_edit_api=nil,api_rectify=nil,zone=nil,account=nil,nameservers=[]ofString,master_tsig_key_ids=nil,slave_tsig_key_ids=nil)-class-method" class="signature"><strong>.new</strong>(*, name, kind, rrsets = <span class="o">[]</span> <span class="k">of</span> <span class="t">RRSet</span>, masters = <span class="n">nil</span>, dnssec = <span class="n">nil</span>, nsec3param = <span class="n">nil</span>, nsec3narrow = <span class="n">nil</span>, presigned = <span class="n">nil</span>, soa_edit = <span class="n">nil</span>, soa_edit_api = <span class="n">nil</span>, api_rectify = <span class="n">nil</span>, zone = <span class="n">nil</span>, account = <span class="n">nil</span>, nameservers = <span class="o">[]</span> <span class="k">of</span> <span class="t">String</span>, master_tsig_key_ids = <span class="n">nil</span>, slave_tsig_key_ids = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Initialize a new Zone with the given attributes</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+  <h2>
+    <a id="instance-method-summary" class="anchor" href="#instance-method-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Summary
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#account:String?-instance-method" class="signature"><strong>#account</strong> : String?</a>
+        
+          <div class="summary"><p>MAY be set.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#account=(account:String?)-instance-method" class="signature"><strong>#account=</strong>(account : String?)</a>
+        
+          <div class="summary"><p>MAY be set.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#api_rectify=(api_rectify:Bool?)-instance-method" class="signature"><strong>#api_rectify=</strong>(api_rectify : Bool?)</a>
+        
+          <div class="summary"><p>Whether or not the zone will be rectified on data changes via the API</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#api_rectify?:Bool?-instance-method" class="signature"><strong>#api_rectify?</strong> : Bool?</a>
+        
+          <div class="summary"><p>Whether or not the zone will be rectified on data changes via the API</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#dnssec=(dnssec:Bool?)-instance-method" class="signature"><strong>#dnssec=</strong>(dnssec : Bool?)</a>
+        
+          <div class="summary"><p>Whether or not this zone is DNSSEC signed (inferred from presigned being true XOR presence of at least one cryptokey with active being true)</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#dnssec?:Bool?-instance-method" class="signature"><strong>#dnssec?</strong> : Bool?</a>
+        
+          <div class="summary"><p>Whether or not this zone is DNSSEC signed (inferred from presigned being true XOR presence of at least one cryptokey with active being true)</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#edited_serial:UInt64?-instance-method" class="signature"><strong>#edited_serial</strong> : UInt64?</a>
+        
+          <div class="summary"><p>The SOA serial as seen in query responses.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#edited_serial?:UInt64%7CNil?-instance-method" class="signature"><strong>#edited_serial?</strong> : UInt64 | Nil?</a>
+        
+          <div class="summary"><p>The SOA serial as seen in query responses.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#id:String?-instance-method" class="signature"><strong>#id</strong> : String?</a>
+        
+          <div class="summary"><p>Opaque zone id (string), assigned by the server, should not be interpreted by the application.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#id?:String%7CNil?-instance-method" class="signature"><strong>#id?</strong> : String | Nil?</a>
+        
+          <div class="summary"><p>Opaque zone id (string), assigned by the server, should not be interpreted by the application.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#kind:Kind?-instance-method" class="signature"><strong>#kind</strong> : Kind?</a>
+        
+          <div class="summary"><p>Zone kind, one of <code><a href="../Pdns/Zone/Kind.html#Native">Kind::Native</a></code>, <code><a href="../Pdns/Zone/Kind.html#Master">Kind::Master</a></code>, <code><a href="../Pdns/Zone/Kind.html#Slave">Kind::Slave</a></code></p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#kind=(kind:Kind?)-instance-method" class="signature"><strong>#kind=</strong>(kind : Kind?)</a>
+        
+          <div class="summary"><p>Zone kind, one of <code><a href="../Pdns/Zone/Kind.html#Native">Kind::Native</a></code>, <code><a href="../Pdns/Zone/Kind.html#Master">Kind::Master</a></code>, <code><a href="../Pdns/Zone/Kind.html#Slave">Kind::Slave</a></code></p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#kind?:Kind%7CNil?-instance-method" class="signature"><strong>#kind?</strong> : Kind | Nil?</a>
+        
+          <div class="summary"><p>Zone kind, one of <code><a href="../Pdns/Zone/Kind.html#Native">Kind::Native</a></code>, <code><a href="../Pdns/Zone/Kind.html#Master">Kind::Master</a></code>, <code><a href="../Pdns/Zone/Kind.html#Slave">Kind::Slave</a></code></p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#master_tsig_key_ids:Array(String)?-instance-method" class="signature"><strong>#master_tsig_key_ids</strong> : Array(String)?</a>
+        
+          <div class="summary"><p>The id of the TSIG keys used for master operation in this zone</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#master_tsig_key_ids=(master_tsig_key_ids:Array(String)?)-instance-method" class="signature"><strong>#master_tsig_key_ids=</strong>(master_tsig_key_ids : Array(String)?)</a>
+        
+          <div class="summary"><p>The id of the TSIG keys used for master operation in this zone</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#masters:Array(String)?-instance-method" class="signature"><strong>#masters</strong> : Array(String)?</a>
+        
+          <div class="summary"><p>List of IP addresses configured as a master for this zone ("Slave" type zones only)</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#masters=(masters:Array(String)?)-instance-method" class="signature"><strong>#masters=</strong>(masters : Array(String)?)</a>
+        
+          <div class="summary"><p>List of IP addresses configured as a master for this zone ("Slave" type zones only)</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#name:String?-instance-method" class="signature"><strong>#name</strong> : String?</a>
+        
+          <div class="summary"><p>Name of the zone (e.g.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#name=(name:String?)-instance-method" class="signature"><strong>#name=</strong>(name : String?)</a>
+        
+          <div class="summary"><p>Name of the zone (e.g.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#nameservers:Array(String)?-instance-method" class="signature"><strong>#nameservers</strong> : Array(String)?</a>
+        
+          <div class="summary"><p>MAY be sent in client bodies during creation, and MUST NOT be sent by the server.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#nameservers=(nameservers:Array(String)?)-instance-method" class="signature"><strong>#nameservers=</strong>(nameservers : Array(String)?)</a>
+        
+          <div class="summary"><p>MAY be sent in client bodies during creation, and MUST NOT be sent by the server.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#notified_serial:UInt64?-instance-method" class="signature"><strong>#notified_serial</strong> : UInt64?</a>
+        
+          <div class="summary"><p>The SOA serial notifications have been sent out for</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#notified_serial?:UInt64%7CNil?-instance-method" class="signature"><strong>#notified_serial?</strong> : UInt64 | Nil?</a>
+        
+          <div class="summary"><p>The SOA serial notifications have been sent out for</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#nsec3narrow=(nsec3narrow:Bool?)-instance-method" class="signature"><strong>#nsec3narrow=</strong>(nsec3narrow : Bool?)</a>
+        
+          <div class="summary"><p>Whether or not the zone uses NSEC3 narrow</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#nsec3narrow?:Bool?-instance-method" class="signature"><strong>#nsec3narrow?</strong> : Bool?</a>
+        
+          <div class="summary"><p>Whether or not the zone uses NSEC3 narrow</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#nsec3param:String?-instance-method" class="signature"><strong>#nsec3param</strong> : String?</a>
+        
+          <div class="summary"><p>The NSEC3PARAM record</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#nsec3param=(nsec3param:String?)-instance-method" class="signature"><strong>#nsec3param=</strong>(nsec3param : String?)</a>
+        
+          <div class="summary"><p>The NSEC3PARAM record</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#presigned=(presigned:Bool?)-instance-method" class="signature"><strong>#presigned=</strong>(presigned : Bool?)</a>
+        
+          <div class="summary"><p>Whether or not the zone is pre-signed</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#presigned?:Bool?-instance-method" class="signature"><strong>#presigned?</strong> : Bool?</a>
+        
+          <div class="summary"><p>Whether or not the zone is pre-signed</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#rrsets:Array(RRSet)?-instance-method" class="signature"><strong>#rrsets</strong> : Array(RRSet)?</a>
+        
+          <div class="summary"><p>RRSets in this zone (for zones/{zone_id} endpoint only; omitted during GET on the .../zones list endpoint)</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#rrsets=(rrsets:Array(RRSet)?)-instance-method" class="signature"><strong>#rrsets=</strong>(rrsets : Array(RRSet)?)</a>
+        
+          <div class="summary"><p>RRSets in this zone (for zones/{zone_id} endpoint only; omitted during GET on the .../zones list endpoint)</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#rrsets?:Array(RRSet)%7CNil?-instance-method" class="signature"><strong>#rrsets?</strong> : Array(RRSet) | Nil?</a>
+        
+          <div class="summary"><p>RRSets in this zone (for zones/{zone_id} endpoint only; omitted during GET on the .../zones list endpoint)</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#serial:UInt64?-instance-method" class="signature"><strong>#serial</strong> : UInt64?</a>
+        
+          <div class="summary"><p>The SOA serial number</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#serial?:UInt64%7CNil?-instance-method" class="signature"><strong>#serial?</strong> : UInt64 | Nil?</a>
+        
+          <div class="summary"><p>The SOA serial number</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#slave_tsig_key_ids:Array(String)?-instance-method" class="signature"><strong>#slave_tsig_key_ids</strong> : Array(String)?</a>
+        
+          <div class="summary"><p>The id of the TSIG keys used for slave operation in this zone</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#slave_tsig_key_ids=(slave_tsig_key_ids:Array(String)?)-instance-method" class="signature"><strong>#slave_tsig_key_ids=</strong>(slave_tsig_key_ids : Array(String)?)</a>
+        
+          <div class="summary"><p>The id of the TSIG keys used for slave operation in this zone</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#soa_edit:String?-instance-method" class="signature"><strong>#soa_edit</strong> : String?</a>
+        
+          <div class="summary"><p>The SOA-EDIT metadata item</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#soa_edit=(soa_edit:String?)-instance-method" class="signature"><strong>#soa_edit=</strong>(soa_edit : String?)</a>
+        
+          <div class="summary"><p>The SOA-EDIT metadata item</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#soa_edit_api:String?-instance-method" class="signature"><strong>#soa_edit_api</strong> : String?</a>
+        
+          <div class="summary"><p>The SOA-EDIT-API metadata item</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#soa_edit_api=(soa_edit_api:String?)-instance-method" class="signature"><strong>#soa_edit_api=</strong>(soa_edit_api : String?)</a>
+        
+          <div class="summary"><p>The SOA-EDIT-API metadata item</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#type:String?-instance-method" class="signature"><strong>#type</strong> : String?</a>
+        
+          <div class="summary"><p>Set to "Zone”</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#type=(type:String?)-instance-method" class="signature"><strong>#type=</strong>(type : String?)</a>
+        
+          <div class="summary"><p>Set to "Zone”</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#type?:String%7CNil?-instance-method" class="signature"><strong>#type?</strong> : String | Nil?</a>
+        
+          <div class="summary"><p>Set to "Zone”</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#url:String?-instance-method" class="signature"><strong>#url</strong> : String?</a>
+        
+          <div class="summary"><p>API endpoint for this zone</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#url=(url:String?)-instance-method" class="signature"><strong>#url=</strong>(url : String?)</a>
+        
+          <div class="summary"><p>API endpoint for this zone</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#url?:String%7CNil?-instance-method" class="signature"><strong>#url?</strong> : String | Nil?</a>
+        
+          <div class="summary"><p>API endpoint for this zone</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#zone:String?-instance-method" class="signature"><strong>#zone</strong> : String?</a>
+        
+          <div class="summary"><p>MAY contain a BIND-style zone file when creating a zone</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#zone=(zone:String?)-instance-method" class="signature"><strong>#zone=</strong>(zone : String?)</a>
+        
+          <div class="summary"><p>MAY contain a BIND-style zone file when creating a zone</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>
+    <a id="constructor-detail" class="anchor" href="#constructor-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Constructor Detail
+  </h2>
+  
+    <div class="entry-detail" id="new(pull:JSON::PullParser)-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(pull : JSON::PullParser)
+
+        <a class="method-permalink" href="#new(pull:JSON::PullParser)-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L7" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="new(*,name,kind,rrsets=[]ofRRSet,masters=nil,dnssec=nil,nsec3param=nil,nsec3narrow=nil,presigned=nil,soa_edit=nil,soa_edit_api=nil,api_rectify=nil,zone=nil,account=nil,nameservers=[]ofString,master_tsig_key_ids=nil,slave_tsig_key_ids=nil)-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(*, name, kind, rrsets = <span class="o">[]</span> <span class="k">of</span> <span class="t">RRSet</span>, masters = <span class="n">nil</span>, dnssec = <span class="n">nil</span>, nsec3param = <span class="n">nil</span>, nsec3narrow = <span class="n">nil</span>, presigned = <span class="n">nil</span>, soa_edit = <span class="n">nil</span>, soa_edit_api = <span class="n">nil</span>, api_rectify = <span class="n">nil</span>, zone = <span class="n">nil</span>, account = <span class="n">nil</span>, nameservers = <span class="o">[]</span> <span class="k">of</span> <span class="t">String</span>, master_tsig_key_ids = <span class="n">nil</span>, slave_tsig_key_ids = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#new(*,name,kind,rrsets=[]ofRRSet,masters=nil,dnssec=nil,nsec3param=nil,nsec3narrow=nil,presigned=nil,soa_edit=nil,soa_edit_api=nil,api_rectify=nil,zone=nil,account=nil,nameservers=[]ofString,master_tsig_key_ids=nil,slave_tsig_key_ids=nil)-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Initialize a new Zone with the given attributes</p>
+
+<pre><code><span class="t">Zone</span>.<span class="k">new</span>(
+  name: <span class="s">&quot;powerdns.com.&quot;</span>,
+  kind: <span class="t">Zone</span><span class="t">::</span><span class="t">Kind</span><span class="t">::</span><span class="t">Master</span>,
+  rrsets: [
+    <span class="t">RRSet</span>.<span class="k">new</span>(
+      name: <span class="s">&quot;www.powerdns.com.&quot;</span>,
+      kind: <span class="t">Zone</span><span class="t">::</span><span class="t">Kind</span><span class="t">::</span><span class="t">Native</span>,
+      <span class="k">type</span>: <span class="s">&quot;A&quot;</span>,
+      ttl: <span class="n">3600_u16</span>,
+      changetype: <span class="s">&quot;REPLACE&quot;</span>,
+      records: [<span class="t">Record</span>.<span class="k">new</span>(<span class="s">&quot;127.0.0.1&quot;</span>)],
+    ),
+  ],
+  soa_edit_api: <span class="s">&quot;DEFAULT&quot;</span>,
+)</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L111" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+  <h2>
+    <a id="instance-method-detail" class="anchor" href="#instance-method-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Detail
+  </h2>
+  
+    <div class="entry-detail" id="account:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>account</strong> : String?
+
+        <a class="method-permalink" href="#account:String?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>MAY be set. Its value is defined by local policy</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L73" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="account=(account:String?)-instance-method">
+      <div class="signature">
+        
+        def <strong>account=</strong>(account : String?)
+
+        <a class="method-permalink" href="#account=(account:String?)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>MAY be set. Its value is defined by local policy</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L73" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="api_rectify=(api_rectify:Bool?)-instance-method">
+      <div class="signature">
+        
+        def <strong>api_rectify=</strong>(api_rectify : Bool?)
+
+        <a class="method-permalink" href="#api_rectify=(api_rectify:Bool?)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Whether or not the zone will be rectified on data changes via the API</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L67" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="api_rectify?:Bool?-instance-method">
+      <div class="signature">
+        
+        def <strong>api_rectify?</strong> : Bool?
+
+        <a class="method-permalink" href="#api_rectify?:Bool?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Whether or not the zone will be rectified on data changes via the API</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L67" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="dnssec=(dnssec:Bool?)-instance-method">
+      <div class="signature">
+        
+        def <strong>dnssec=</strong>(dnssec : Bool?)
+
+        <a class="method-permalink" href="#dnssec=(dnssec:Bool?)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Whether or not this zone is DNSSEC signed
+(inferred from presigned being true XOR presence of at least one
+cryptokey with active being true)</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L49" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="dnssec?:Bool?-instance-method">
+      <div class="signature">
+        
+        def <strong>dnssec?</strong> : Bool?
+
+        <a class="method-permalink" href="#dnssec?:Bool?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Whether or not this zone is DNSSEC signed
+(inferred from presigned being true XOR presence of at least one
+cryptokey with active being true)</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L49" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="edited_serial:UInt64?-instance-method">
+      <div class="signature">
+        
+        def <strong>edited_serial</strong> : UInt64?
+
+        <a class="method-permalink" href="#edited_serial:UInt64?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>The SOA serial as seen in query responses.
+Calculated using the SOA-EDIT metadata,
+default-soa-edit and default-soa-edit-signed settings</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L40" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="edited_serial?:UInt64|Nil?-instance-method">
+      <div class="signature">
+        
+        def <strong>edited_serial?</strong> : UInt64 | Nil?
+
+        <a class="method-permalink" href="#edited_serial?:UInt64%7CNil?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>The SOA serial as seen in query responses.
+Calculated using the SOA-EDIT metadata,
+default-soa-edit and default-soa-edit-signed settings</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L40" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="id:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>id</strong> : String?
+
+        <a class="method-permalink" href="#id:String?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Opaque zone id (string), assigned by the server,
+should not be interpreted by the application.
+Guaranteed to be safe for embedding in URLs.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L12" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="id?:String|Nil?-instance-method">
+      <div class="signature">
+        
+        def <strong>id?</strong> : String | Nil?
+
+        <a class="method-permalink" href="#id?:String%7CNil?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Opaque zone id (string), assigned by the server,
+should not be interpreted by the application.
+Guaranteed to be safe for embedding in URLs.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L12" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="kind:Kind?-instance-method">
+      <div class="signature">
+        
+        def <strong>kind</strong> : <a href="../Pdns/Zone/Kind.html">Kind</a>?
+
+        <a class="method-permalink" href="#kind:Kind?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Zone kind, one of <code><a href="../Pdns/Zone/Kind.html#Native">Kind::Native</a></code>, <code><a href="../Pdns/Zone/Kind.html#Master">Kind::Master</a></code>, <code><a href="../Pdns/Zone/Kind.html#Slave">Kind::Slave</a></code></p>
+        </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="kind=(kind:Kind?)-instance-method">
+      <div class="signature">
+        
+        def <strong>kind=</strong>(kind : <a href="../Pdns/Zone/Kind.html">Kind</a>?)
+
+        <a class="method-permalink" href="#kind=(kind:Kind?)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Zone kind, one of <code><a href="../Pdns/Zone/Kind.html#Native">Kind::Native</a></code>, <code><a href="../Pdns/Zone/Kind.html#Master">Kind::Master</a></code>, <code><a href="../Pdns/Zone/Kind.html#Slave">Kind::Slave</a></code></p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L24" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="kind?:Kind|Nil?-instance-method">
+      <div class="signature">
+        
+        def <strong>kind?</strong> : <a href="../Pdns/Zone/Kind.html">Kind</a> | Nil?
+
+        <a class="method-permalink" href="#kind?:Kind%7CNil?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Zone kind, one of <code><a href="../Pdns/Zone/Kind.html#Native">Kind::Native</a></code>, <code><a href="../Pdns/Zone/Kind.html#Master">Kind::Master</a></code>, <code><a href="../Pdns/Zone/Kind.html#Slave">Kind::Slave</a></code></p>
+        </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="master_tsig_key_ids:Array(String)?-instance-method">
+      <div class="signature">
+        
+        def <strong>master_tsig_key_ids</strong> : Array(String)?
+
+        <a class="method-permalink" href="#master_tsig_key_ids:Array(String)?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>The id of the TSIG keys used for master operation in this zone</p>
+
+<p>See: https://doc.powerdns.com/authoritative/tsig.html#provisioning-outbound-axfr-access</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L85" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="master_tsig_key_ids=(master_tsig_key_ids:Array(String)?)-instance-method">
+      <div class="signature">
+        
+        def <strong>master_tsig_key_ids=</strong>(master_tsig_key_ids : Array(String)?)
+
+        <a class="method-permalink" href="#master_tsig_key_ids=(master_tsig_key_ids:Array(String)?)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>The id of the TSIG keys used for master operation in this zone</p>
+
+<p>See: https://doc.powerdns.com/authoritative/tsig.html#provisioning-outbound-axfr-access</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L85" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="masters:Array(String)?-instance-method">
+      <div class="signature">
+        
+        def <strong>masters</strong> : Array(String)?
+
+        <a class="method-permalink" href="#masters:Array(String)?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>List of IP addresses configured as a master for this zone
+("Slave" type zones only)</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="masters=(masters:Array(String)?)-instance-method">
+      <div class="signature">
+        
+        def <strong>masters=</strong>(masters : Array(String)?)
+
+        <a class="method-permalink" href="#masters=(masters:Array(String)?)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>List of IP addresses configured as a master for this zone
+("Slave" type zones only)</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="name:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>name</strong> : String?
+
+        <a class="method-permalink" href="#name:String?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Name of the zone (e.g. "example.com.") MUST have a trailing dot</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L15" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="name=(name:String?)-instance-method">
+      <div class="signature">
+        
+        def <strong>name=</strong>(name : String?)
+
+        <a class="method-permalink" href="#name=(name:String?)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Name of the zone (e.g. "example.com.") MUST have a trailing dot</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L15" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="nameservers:Array(String)?-instance-method">
+      <div class="signature">
+        
+        def <strong>nameservers</strong> : Array(String)?
+
+        <a class="method-permalink" href="#nameservers:Array(String)?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>MAY be sent in client bodies during creation,
+and MUST NOT be sent by the server.
+Simple list of strings of nameserver names,
+including the trailing dot.
+Not required for slave zones.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L80" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="nameservers=(nameservers:Array(String)?)-instance-method">
+      <div class="signature">
+        
+        def <strong>nameservers=</strong>(nameservers : Array(String)?)
+
+        <a class="method-permalink" href="#nameservers=(nameservers:Array(String)?)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>MAY be sent in client bodies during creation,
+and MUST NOT be sent by the server.
+Simple list of strings of nameserver names,
+including the trailing dot.
+Not required for slave zones.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L80" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="notified_serial:UInt64?-instance-method">
+      <div class="signature">
+        
+        def <strong>notified_serial</strong> : UInt64?
+
+        <a class="method-permalink" href="#notified_serial:UInt64?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>The SOA serial notifications have been sent out for</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L35" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="notified_serial?:UInt64|Nil?-instance-method">
+      <div class="signature">
+        
+        def <strong>notified_serial?</strong> : UInt64 | Nil?
+
+        <a class="method-permalink" href="#notified_serial?:UInt64%7CNil?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>The SOA serial notifications have been sent out for</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L35" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="nsec3narrow=(nsec3narrow:Bool?)-instance-method">
+      <div class="signature">
+        
+        def <strong>nsec3narrow=</strong>(nsec3narrow : Bool?)
+
+        <a class="method-permalink" href="#nsec3narrow=(nsec3narrow:Bool?)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Whether or not the zone uses NSEC3 narrow</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L55" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="nsec3narrow?:Bool?-instance-method">
+      <div class="signature">
+        
+        def <strong>nsec3narrow?</strong> : Bool?
+
+        <a class="method-permalink" href="#nsec3narrow?:Bool?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Whether or not the zone uses NSEC3 narrow</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L55" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="nsec3param:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>nsec3param</strong> : String?
+
+        <a class="method-permalink" href="#nsec3param:String?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>The NSEC3PARAM record</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L52" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="nsec3param=(nsec3param:String?)-instance-method">
+      <div class="signature">
+        
+        def <strong>nsec3param=</strong>(nsec3param : String?)
+
+        <a class="method-permalink" href="#nsec3param=(nsec3param:String?)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>The NSEC3PARAM record</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L52" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="presigned=(presigned:Bool?)-instance-method">
+      <div class="signature">
+        
+        def <strong>presigned=</strong>(presigned : Bool?)
+
+        <a class="method-permalink" href="#presigned=(presigned:Bool?)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Whether or not the zone is pre-signed</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L58" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="presigned?:Bool?-instance-method">
+      <div class="signature">
+        
+        def <strong>presigned?</strong> : Bool?
+
+        <a class="method-permalink" href="#presigned?:Bool?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Whether or not the zone is pre-signed</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L58" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="rrsets:Array(RRSet)?-instance-method">
+      <div class="signature">
+        
+        def <strong>rrsets</strong> : Array(<a href="../Pdns/RRSet.html">RRSet</a>)?
+
+        <a class="method-permalink" href="#rrsets:Array(RRSet)?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>RRSets in this zone
+(for zones/{zone_id} endpoint only;
+omitted during GET on the .../zones list endpoint)</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="rrsets=(rrsets:Array(RRSet)?)-instance-method">
+      <div class="signature">
+        
+        def <strong>rrsets=</strong>(rrsets : Array(<a href="../Pdns/RRSet.html">RRSet</a>)?)
+
+        <a class="method-permalink" href="#rrsets=(rrsets:Array(RRSet)?)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>RRSets in this zone
+(for zones/{zone_id} endpoint only;
+omitted during GET on the .../zones list endpoint)</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L29" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="rrsets?:Array(RRSet)|Nil?-instance-method">
+      <div class="signature">
+        
+        def <strong>rrsets?</strong> : Array(<a href="../Pdns/RRSet.html">RRSet</a>) | Nil?
+
+        <a class="method-permalink" href="#rrsets?:Array(RRSet)%7CNil?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>RRSets in this zone
+(for zones/{zone_id} endpoint only;
+omitted during GET on the .../zones list endpoint)</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="serial:UInt64?-instance-method">
+      <div class="signature">
+        
+        def <strong>serial</strong> : UInt64?
+
+        <a class="method-permalink" href="#serial:UInt64?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>The SOA serial number</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L32" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="serial?:UInt64|Nil?-instance-method">
+      <div class="signature">
+        
+        def <strong>serial?</strong> : UInt64 | Nil?
+
+        <a class="method-permalink" href="#serial?:UInt64%7CNil?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>The SOA serial number</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L32" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="slave_tsig_key_ids:Array(String)?-instance-method">
+      <div class="signature">
+        
+        def <strong>slave_tsig_key_ids</strong> : Array(String)?
+
+        <a class="method-permalink" href="#slave_tsig_key_ids:Array(String)?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>The id of the TSIG keys used for slave operation in this zone</p>
+
+<p>See: https://doc.powerdns.com/authoritative/tsig.html#provisioning-signed-notification-and-axfr-requests</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L90" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="slave_tsig_key_ids=(slave_tsig_key_ids:Array(String)?)-instance-method">
+      <div class="signature">
+        
+        def <strong>slave_tsig_key_ids=</strong>(slave_tsig_key_ids : Array(String)?)
+
+        <a class="method-permalink" href="#slave_tsig_key_ids=(slave_tsig_key_ids:Array(String)?)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>The id of the TSIG keys used for slave operation in this zone</p>
+
+<p>See: https://doc.powerdns.com/authoritative/tsig.html#provisioning-signed-notification-and-axfr-requests</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L90" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="soa_edit:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>soa_edit</strong> : String?
+
+        <a class="method-permalink" href="#soa_edit:String?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>The SOA-EDIT metadata item</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L61" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="soa_edit=(soa_edit:String?)-instance-method">
+      <div class="signature">
+        
+        def <strong>soa_edit=</strong>(soa_edit : String?)
+
+        <a class="method-permalink" href="#soa_edit=(soa_edit:String?)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>The SOA-EDIT metadata item</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L61" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="soa_edit_api:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>soa_edit_api</strong> : String?
+
+        <a class="method-permalink" href="#soa_edit_api:String?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>The SOA-EDIT-API metadata item</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L64" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="soa_edit_api=(soa_edit_api:String?)-instance-method">
+      <div class="signature">
+        
+        def <strong>soa_edit_api=</strong>(soa_edit_api : String?)
+
+        <a class="method-permalink" href="#soa_edit_api=(soa_edit_api:String?)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>The SOA-EDIT-API metadata item</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L64" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="type:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>type</strong> : String?
+
+        <a class="method-permalink" href="#type:String?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Set to "Zone”</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="type=(type:String?)-instance-method">
+      <div class="signature">
+        
+        def <strong>type=</strong>(type : String?)
+
+        <a class="method-permalink" href="#type=(type:String?)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Set to "Zone”</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L18" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="type?:String|Nil?-instance-method">
+      <div class="signature">
+        
+        def <strong>type?</strong> : String | Nil?
+
+        <a class="method-permalink" href="#type?:String%7CNil?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Set to "Zone”</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="url:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>url</strong> : String?
+
+        <a class="method-permalink" href="#url:String?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>API endpoint for this zone</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="url=(url:String?)-instance-method">
+      <div class="signature">
+        
+        def <strong>url=</strong>(url : String?)
+
+        <a class="method-permalink" href="#url=(url:String?)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>API endpoint for this zone</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L21" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="url?:String|Nil?-instance-method">
+      <div class="signature">
+        
+        def <strong>url?</strong> : String | Nil?
+
+        <a class="method-permalink" href="#url?:String%7CNil?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>API endpoint for this zone</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="zone:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>zone</strong> : String?
+
+        <a class="method-permalink" href="#zone:String?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>MAY contain a BIND-style zone file when creating a zone</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L70" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="zone=(zone:String?)-instance-method">
+      <div class="signature">
+        
+        def <strong>zone=</strong>(zone : String?)
+
+        <a class="method-permalink" href="#zone=(zone:String?)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>MAY contain a BIND-style zone file when creating a zone</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/zone.cr#L70" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>

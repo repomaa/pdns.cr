@@ -1,0 +1,1595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.34.0">
+<meta name="crystal_docs.project_version" content="HEAD">
+<meta name="crystal_docs.project_name" content="pdns">
+
+
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/doc.js"></script>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+
+  <meta id="repository-name" content="pdns">
+  <title>Pdns::DNSRecordType - pdns HEAD</title>
+  <script type="text/javascript">
+    CrystalDocs.base_path = "../";
+  </script>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="project-summary">
+      <h1 class="project-name">
+        <a href="../index.html">
+          pdns
+        </a>
+      </h1>
+
+      <span class="project-version">
+        HEAD
+      </span>
+    </div>
+  </div>
+
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class="parent open current" data-id="pdns/Pdns" data-name="pdns">
+      <a href="../Pdns.html">Pdns</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="pdns/Pdns/API" data-name="pdns::api">
+      <a href="../Pdns/API.html">API</a>
+      
+        <ul>
+  
+  <li class=" " data-id="pdns/Pdns/API/Endpoint" data-name="pdns::api::endpoint">
+      <a href="../Pdns/API/Endpoint.html">Endpoint</a>
+      
+    </li>
+  
+  <li class="parent " data-id="pdns/Pdns/API/Endpoints" data-name="pdns::api::endpoints">
+      <a href="../Pdns/API/Endpoints.html">Endpoints</a>
+      
+        <ul>
+  
+  <li class=" " data-id="pdns/Pdns/API/Endpoints/Cache" data-name="pdns::api::endpoints::cache">
+      <a href="../Pdns/API/Endpoints/Cache.html">Cache</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/API/Endpoints/Cryptokeys" data-name="pdns::api::endpoints::cryptokeys">
+      <a href="../Pdns/API/Endpoints/Cryptokeys.html">Cryptokeys</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/API/Endpoints/Metadata" data-name="pdns::api::endpoints::metadata">
+      <a href="../Pdns/API/Endpoints/Metadata.html">Metadata</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/API/Endpoints/Searching" data-name="pdns::api::endpoints::searching">
+      <a href="../Pdns/API/Endpoints/Searching.html">Searching</a>
+      
+    </li>
+  
+  <li class="parent " data-id="pdns/Pdns/API/Endpoints/Servers" data-name="pdns::api::endpoints::servers">
+      <a href="../Pdns/API/Endpoints/Servers.html">Servers</a>
+      
+        <ul>
+  
+  <li class=" " data-id="pdns/Pdns/API/Endpoints/Servers/Scoped" data-name="pdns::api::endpoints::servers::scoped">
+      <a href="../Pdns/API/Endpoints/Servers/Scoped.html">Scoped</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/API/Endpoints/Statistics" data-name="pdns::api::endpoints::statistics">
+      <a href="../Pdns/API/Endpoints/Statistics.html">Statistics</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/API/Endpoints/TSIGKeys" data-name="pdns::api::endpoints::tsigkeys">
+      <a href="../Pdns/API/Endpoints/TSIGKeys.html">TSIGKeys</a>
+      
+    </li>
+  
+  <li class="parent " data-id="pdns/Pdns/API/Endpoints/Zones" data-name="pdns::api::endpoints::zones">
+      <a href="../Pdns/API/Endpoints/Zones.html">Zones</a>
+      
+        <ul>
+  
+  <li class=" " data-id="pdns/Pdns/API/Endpoints/Zones/Scoped" data-name="pdns::api::endpoints::zones::scoped">
+      <a href="../Pdns/API/Endpoints/Zones/Scoped.html">Scoped</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/CacheFlushResult" data-name="pdns::cacheflushresult">
+      <a href="../Pdns/CacheFlushResult.html">CacheFlushResult</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/Comment" data-name="pdns::comment">
+      <a href="../Pdns/Comment.html">Comment</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/Cryptokey" data-name="pdns::cryptokey">
+      <a href="../Pdns/Cryptokey.html">Cryptokey</a>
+      
+    </li>
+  
+  <li class=" current" data-id="pdns/Pdns/DNSRecordType" data-name="pdns::dnsrecordtype">
+      <a href="../Pdns/DNSRecordType.html">DNSRecordType</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/MapStatisticItem" data-name="pdns::mapstatisticitem">
+      <a href="../Pdns/MapStatisticItem.html">MapStatisticItem</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/Metadata" data-name="pdns::metadata">
+      <a href="../Pdns/Metadata.html">Metadata</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/Record" data-name="pdns::record">
+      <a href="../Pdns/Record.html">Record</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/RingStatisticItem" data-name="pdns::ringstatisticitem">
+      <a href="../Pdns/RingStatisticItem.html">RingStatisticItem</a>
+      
+    </li>
+  
+  <li class="parent " data-id="pdns/Pdns/RRSet" data-name="pdns::rrset">
+      <a href="../Pdns/RRSet.html">RRSet</a>
+      
+        <ul>
+  
+  <li class=" " data-id="pdns/Pdns/RRSet/ChangeType" data-name="pdns::rrset::changetype">
+      <a href="../Pdns/RRSet/ChangeType.html">ChangeType</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="pdns/Pdns/SearchResult" data-name="pdns::searchresult">
+      <a href="../Pdns/SearchResult.html">SearchResult</a>
+      
+        <ul>
+  
+  <li class=" " data-id="pdns/Pdns/SearchResult/ObjectType" data-name="pdns::searchresult::objecttype">
+      <a href="../Pdns/SearchResult/ObjectType.html">ObjectType</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/Server" data-name="pdns::server">
+      <a href="../Pdns/Server.html">Server</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/SimpleStatisticItem" data-name="pdns::simplestatisticitem">
+      <a href="../Pdns/SimpleStatisticItem.html">SimpleStatisticItem</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/StatisticItem" data-name="pdns::statisticitem">
+      <a href="../Pdns/StatisticItem.html">StatisticItem</a>
+      
+    </li>
+  
+  <li class=" " data-id="pdns/Pdns/TSIGKey" data-name="pdns::tsigkey">
+      <a href="../Pdns/TSIGKey.html">TSIGKey</a>
+      
+    </li>
+  
+  <li class="parent " data-id="pdns/Pdns/Zone" data-name="pdns::zone">
+      <a href="../Pdns/Zone.html">Zone</a>
+      
+        <ul>
+  
+  <li class=" " data-id="pdns/Pdns/Zone/Kind" data-name="pdns::zone::kind">
+      <a href="../Pdns/Zone/Kind.html">Kind</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">enum</span> Pdns::DNSRecordType
+
+</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="defined-in" class="anchor" href="#defined-in">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Defined in:
+  </h2>
+  
+    
+      <a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L2" target="_blank">
+        pdns/dns_record_type.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+  
+    <h2>
+      <a id="enum-members" class="anchor" href="#enum-members">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+      Enum Members
+    </h2>
+  
+  <dl>
+    
+      <dt class="entry-const" id="A">
+        <strong>A</strong> = <code><span class="n">0</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="AAAA">
+        <strong>AAAA</strong> = <code><span class="n">1</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="AFSDB">
+        <strong>AFSDB</strong> = <code><span class="n">2</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="APL">
+        <strong>APL</strong> = <code><span class="n">3</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="CAA">
+        <strong>CAA</strong> = <code><span class="n">4</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="CDNSKEY">
+        <strong>CDNSKEY</strong> = <code><span class="n">5</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="CDS">
+        <strong>CDS</strong> = <code><span class="n">6</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="CERT">
+        <strong>CERT</strong> = <code><span class="n">7</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="CNAME">
+        <strong>CNAME</strong> = <code><span class="n">8</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="CSYNC">
+        <strong>CSYNC</strong> = <code><span class="n">9</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="DHCID">
+        <strong>DHCID</strong> = <code><span class="n">10</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="DLV">
+        <strong>DLV</strong> = <code><span class="n">11</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="DNAME">
+        <strong>DNAME</strong> = <code><span class="n">12</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="DNSKEY">
+        <strong>DNSKEY</strong> = <code><span class="n">13</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="DS">
+        <strong>DS</strong> = <code><span class="n">14</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="EUI48">
+        <strong>EUI48</strong> = <code><span class="n">15</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="EUI64">
+        <strong>EUI64</strong> = <code><span class="n">16</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="HINFO">
+        <strong>HINFO</strong> = <code><span class="n">17</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="HIP">
+        <strong>HIP</strong> = <code><span class="n">18</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="IPSECKEY">
+        <strong>IPSECKEY</strong> = <code><span class="n">19</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="KEY">
+        <strong>KEY</strong> = <code><span class="n">20</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="KX">
+        <strong>KX</strong> = <code><span class="n">21</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="LOC">
+        <strong>LOC</strong> = <code><span class="n">22</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="MX">
+        <strong>MX</strong> = <code><span class="n">23</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="NAPTR">
+        <strong>NAPTR</strong> = <code><span class="n">24</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="NS">
+        <strong>NS</strong> = <code><span class="n">25</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="NSEC">
+        <strong>NSEC</strong> = <code><span class="n">26</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="NSEC3">
+        <strong>NSEC3</strong> = <code><span class="n">27</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="NSEC3PARAM">
+        <strong>NSEC3PARAM</strong> = <code><span class="n">28</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="OPENPGPKEY">
+        <strong>OPENPGPKEY</strong> = <code><span class="n">29</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="PTR">
+        <strong>PTR</strong> = <code><span class="n">30</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="RRSIG">
+        <strong>RRSIG</strong> = <code><span class="n">31</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="RP">
+        <strong>RP</strong> = <code><span class="n">32</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="SIG">
+        <strong>SIG</strong> = <code><span class="n">33</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="SMIMEA">
+        <strong>SMIMEA</strong> = <code><span class="n">34</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="SOA">
+        <strong>SOA</strong> = <code><span class="n">35</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="SRV">
+        <strong>SRV</strong> = <code><span class="n">36</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="SSHFP">
+        <strong>SSHFP</strong> = <code><span class="n">37</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="TA">
+        <strong>TA</strong> = <code><span class="n">38</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="TKEY">
+        <strong>TKEY</strong> = <code><span class="n">39</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="TLSA">
+        <strong>TLSA</strong> = <code><span class="n">40</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="TSIG">
+        <strong>TSIG</strong> = <code><span class="n">41</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="TXT">
+        <strong>TXT</strong> = <code><span class="n">42</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="URI">
+        <strong>URI</strong> = <code><span class="n">43</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="ZONEMD">
+        <strong>ZONEMD</strong> = <code><span class="n">44</span></code>
+      </dt>
+      
+    
+  </dl>
+
+
+
+
+
+
+
+  <h2>
+    <a id="instance-method-summary" class="anchor" href="#instance-method-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Summary
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#a?-instance-method" class="signature"><strong>#a?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#aaaa?-instance-method" class="signature"><strong>#aaaa?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#afsdb?-instance-method" class="signature"><strong>#afsdb?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#apl?-instance-method" class="signature"><strong>#apl?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#caa?-instance-method" class="signature"><strong>#caa?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#cdnskey?-instance-method" class="signature"><strong>#cdnskey?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#cds?-instance-method" class="signature"><strong>#cds?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#cert?-instance-method" class="signature"><strong>#cert?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#cname?-instance-method" class="signature"><strong>#cname?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#csync?-instance-method" class="signature"><strong>#csync?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#dhcid?-instance-method" class="signature"><strong>#dhcid?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#dlv?-instance-method" class="signature"><strong>#dlv?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#dname?-instance-method" class="signature"><strong>#dname?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#dnskey?-instance-method" class="signature"><strong>#dnskey?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ds?-instance-method" class="signature"><strong>#ds?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#eui48?-instance-method" class="signature"><strong>#eui48?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#eui64?-instance-method" class="signature"><strong>#eui64?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#hinfo?-instance-method" class="signature"><strong>#hinfo?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#hip?-instance-method" class="signature"><strong>#hip?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ipseckey?-instance-method" class="signature"><strong>#ipseckey?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#key?-instance-method" class="signature"><strong>#key?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#kx?-instance-method" class="signature"><strong>#kx?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#loc?-instance-method" class="signature"><strong>#loc?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#mx?-instance-method" class="signature"><strong>#mx?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#naptr?-instance-method" class="signature"><strong>#naptr?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ns?-instance-method" class="signature"><strong>#ns?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#nsec3?-instance-method" class="signature"><strong>#nsec3?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#nsec3_param?-instance-method" class="signature"><strong>#nsec3_param?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#nsec?-instance-method" class="signature"><strong>#nsec?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#openpgpkey?-instance-method" class="signature"><strong>#openpgpkey?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ptr?-instance-method" class="signature"><strong>#ptr?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#rp?-instance-method" class="signature"><strong>#rp?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#rrsig?-instance-method" class="signature"><strong>#rrsig?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#sig?-instance-method" class="signature"><strong>#sig?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#smimea?-instance-method" class="signature"><strong>#smimea?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#soa?-instance-method" class="signature"><strong>#soa?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#srv?-instance-method" class="signature"><strong>#srv?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#sshfp?-instance-method" class="signature"><strong>#sshfp?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ta?-instance-method" class="signature"><strong>#ta?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tkey?-instance-method" class="signature"><strong>#tkey?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tlsa?-instance-method" class="signature"><strong>#tlsa?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_json(builder:JSON::Builder)-instance-method" class="signature"><strong>#to_json</strong>(builder : JSON::Builder)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tsig?-instance-method" class="signature"><strong>#tsig?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#txt?-instance-method" class="signature"><strong>#txt?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#uri?-instance-method" class="signature"><strong>#uri?</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#zonemd?-instance-method" class="signature"><strong>#zonemd?</strong></a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+
+
+
+
+  <h2>
+    <a id="instance-method-detail" class="anchor" href="#instance-method-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Detail
+  </h2>
+  
+    <div class="entry-detail" id="a?-instance-method">
+      <div class="signature">
+        
+        def <strong>a?</strong>
+
+        <a class="method-permalink" href="#a?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L3" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="aaaa?-instance-method">
+      <div class="signature">
+        
+        def <strong>aaaa?</strong>
+
+        <a class="method-permalink" href="#aaaa?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L4" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="afsdb?-instance-method">
+      <div class="signature">
+        
+        def <strong>afsdb?</strong>
+
+        <a class="method-permalink" href="#afsdb?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L5" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="apl?-instance-method">
+      <div class="signature">
+        
+        def <strong>apl?</strong>
+
+        <a class="method-permalink" href="#apl?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L6" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="caa?-instance-method">
+      <div class="signature">
+        
+        def <strong>caa?</strong>
+
+        <a class="method-permalink" href="#caa?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L7" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="cdnskey?-instance-method">
+      <div class="signature">
+        
+        def <strong>cdnskey?</strong>
+
+        <a class="method-permalink" href="#cdnskey?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L8" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="cds?-instance-method">
+      <div class="signature">
+        
+        def <strong>cds?</strong>
+
+        <a class="method-permalink" href="#cds?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L9" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="cert?-instance-method">
+      <div class="signature">
+        
+        def <strong>cert?</strong>
+
+        <a class="method-permalink" href="#cert?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="cname?-instance-method">
+      <div class="signature">
+        
+        def <strong>cname?</strong>
+
+        <a class="method-permalink" href="#cname?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L11" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="csync?-instance-method">
+      <div class="signature">
+        
+        def <strong>csync?</strong>
+
+        <a class="method-permalink" href="#csync?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L12" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="dhcid?-instance-method">
+      <div class="signature">
+        
+        def <strong>dhcid?</strong>
+
+        <a class="method-permalink" href="#dhcid?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="dlv?-instance-method">
+      <div class="signature">
+        
+        def <strong>dlv?</strong>
+
+        <a class="method-permalink" href="#dlv?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L14" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="dname?-instance-method">
+      <div class="signature">
+        
+        def <strong>dname?</strong>
+
+        <a class="method-permalink" href="#dname?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L15" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="dnskey?-instance-method">
+      <div class="signature">
+        
+        def <strong>dnskey?</strong>
+
+        <a class="method-permalink" href="#dnskey?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L16" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ds?-instance-method">
+      <div class="signature">
+        
+        def <strong>ds?</strong>
+
+        <a class="method-permalink" href="#ds?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L17" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="eui48?-instance-method">
+      <div class="signature">
+        
+        def <strong>eui48?</strong>
+
+        <a class="method-permalink" href="#eui48?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L18" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="eui64?-instance-method">
+      <div class="signature">
+        
+        def <strong>eui64?</strong>
+
+        <a class="method-permalink" href="#eui64?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L19" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="hinfo?-instance-method">
+      <div class="signature">
+        
+        def <strong>hinfo?</strong>
+
+        <a class="method-permalink" href="#hinfo?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L20" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="hip?-instance-method">
+      <div class="signature">
+        
+        def <strong>hip?</strong>
+
+        <a class="method-permalink" href="#hip?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L21" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ipseckey?-instance-method">
+      <div class="signature">
+        
+        def <strong>ipseckey?</strong>
+
+        <a class="method-permalink" href="#ipseckey?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L22" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="key?-instance-method">
+      <div class="signature">
+        
+        def <strong>key?</strong>
+
+        <a class="method-permalink" href="#key?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L23" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="kx?-instance-method">
+      <div class="signature">
+        
+        def <strong>kx?</strong>
+
+        <a class="method-permalink" href="#kx?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L24" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="loc?-instance-method">
+      <div class="signature">
+        
+        def <strong>loc?</strong>
+
+        <a class="method-permalink" href="#loc?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L25" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="mx?-instance-method">
+      <div class="signature">
+        
+        def <strong>mx?</strong>
+
+        <a class="method-permalink" href="#mx?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L26" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="naptr?-instance-method">
+      <div class="signature">
+        
+        def <strong>naptr?</strong>
+
+        <a class="method-permalink" href="#naptr?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L27" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ns?-instance-method">
+      <div class="signature">
+        
+        def <strong>ns?</strong>
+
+        <a class="method-permalink" href="#ns?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L28" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="nsec3?-instance-method">
+      <div class="signature">
+        
+        def <strong>nsec3?</strong>
+
+        <a class="method-permalink" href="#nsec3?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L30" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="nsec3_param?-instance-method">
+      <div class="signature">
+        
+        def <strong>nsec3_param?</strong>
+
+        <a class="method-permalink" href="#nsec3_param?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L31" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="nsec?-instance-method">
+      <div class="signature">
+        
+        def <strong>nsec?</strong>
+
+        <a class="method-permalink" href="#nsec?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L29" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="openpgpkey?-instance-method">
+      <div class="signature">
+        
+        def <strong>openpgpkey?</strong>
+
+        <a class="method-permalink" href="#openpgpkey?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L32" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ptr?-instance-method">
+      <div class="signature">
+        
+        def <strong>ptr?</strong>
+
+        <a class="method-permalink" href="#ptr?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L33" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="rp?-instance-method">
+      <div class="signature">
+        
+        def <strong>rp?</strong>
+
+        <a class="method-permalink" href="#rp?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L35" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="rrsig?-instance-method">
+      <div class="signature">
+        
+        def <strong>rrsig?</strong>
+
+        <a class="method-permalink" href="#rrsig?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L34" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="sig?-instance-method">
+      <div class="signature">
+        
+        def <strong>sig?</strong>
+
+        <a class="method-permalink" href="#sig?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L36" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="smimea?-instance-method">
+      <div class="signature">
+        
+        def <strong>smimea?</strong>
+
+        <a class="method-permalink" href="#smimea?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L37" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="soa?-instance-method">
+      <div class="signature">
+        
+        def <strong>soa?</strong>
+
+        <a class="method-permalink" href="#soa?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L38" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="srv?-instance-method">
+      <div class="signature">
+        
+        def <strong>srv?</strong>
+
+        <a class="method-permalink" href="#srv?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L39" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="sshfp?-instance-method">
+      <div class="signature">
+        
+        def <strong>sshfp?</strong>
+
+        <a class="method-permalink" href="#sshfp?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L40" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ta?-instance-method">
+      <div class="signature">
+        
+        def <strong>ta?</strong>
+
+        <a class="method-permalink" href="#ta?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L41" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tkey?-instance-method">
+      <div class="signature">
+        
+        def <strong>tkey?</strong>
+
+        <a class="method-permalink" href="#tkey?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L42" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tlsa?-instance-method">
+      <div class="signature">
+        
+        def <strong>tlsa?</strong>
+
+        <a class="method-permalink" href="#tlsa?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L43" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_json(builder:JSON::Builder)-instance-method">
+      <div class="signature">
+        
+        def <strong>to_json</strong>(builder : JSON::Builder)
+
+        <a class="method-permalink" href="#to_json(builder:JSON::Builder)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L49" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tsig?-instance-method">
+      <div class="signature">
+        
+        def <strong>tsig?</strong>
+
+        <a class="method-permalink" href="#tsig?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="txt?-instance-method">
+      <div class="signature">
+        
+        def <strong>txt?</strong>
+
+        <a class="method-permalink" href="#txt?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L45" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="uri?-instance-method">
+      <div class="signature">
+        
+        def <strong>uri?</strong>
+
+        <a class="method-permalink" href="#uri?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L46" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="zonemd?-instance-method">
+      <div class="signature">
+        
+        def <strong>zonemd?</strong>
+
+        <a class="method-permalink" href="#zonemd?-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/repomaa/pdns.cr/blob/c2d9245f2a41323a49d59dc0e8463501d7f6d6b1/src/pdns/dns_record_type.cr#L47" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>
