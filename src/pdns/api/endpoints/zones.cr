@@ -12,6 +12,8 @@ class Pdns::API
       end
 
       # Creates a new domain
+      #
+      # *rrsets* - set to `false` to exclude rrsets from the response
       def create(zone : Zone, *, rrsets : Bool? = nil) : Zone
         post("/", Zone, body: zone, rrsets: rrsets)
       end
