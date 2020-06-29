@@ -1,0 +1,53 @@
+module Pdns
+  enum DNSRecordType
+    A
+    AAAA
+    AFSDB
+    APL
+    CAA
+    CDNSKEY
+    CDS
+    CERT
+    CNAME
+    CSYNC
+    DHCID
+    DLV
+    DNAME
+    DNSKEY
+    DS
+    EUI48
+    EUI64
+    HINFO
+    HIP
+    IPSECKEY
+    KEY
+    KX
+    LOC
+    MX
+    NAPTR
+    NS
+    NSEC
+    NSEC3
+    NSEC3PARAM
+    OPENPGPKEY
+    PTR
+    RRSIG
+    RP
+    SIG
+    SMIMEA
+    SOA
+    SRV
+    SSHFP
+    TA
+    TKEY
+    TLSA
+    TSIG
+    TXT
+    URI
+    ZONEMD
+
+    def to_json(builder : JSON::Builder)
+      builder.string(to_s)
+    end
+  end
+end
