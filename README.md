@@ -91,9 +91,16 @@ api.servers.with("localhost") do |server|
 end
 ```
 
+See [the documentation](https://repomaa.github.io/pdns.cr) for more information.
+Especially the `Pdns::API::Endpoint`. Most endpoints are scoped under either
+`Pdns::API::Endpoints::Server` or `Pdns::API::Endpoints::Zone` (which is in turn
+scoped under `Pdns::API::Endpoints::Server`). You can access the scoped
+endpoints by using the `#with(id)` method of an endpoint. It will be passed as a
+block variable.
+
 ## Contributing
 
-1. Fork it (<https://github.com/repomaa/pdns/fork>)
+1. Fork it (<https://github.com/repomaa/pdns.cr/fork>)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
