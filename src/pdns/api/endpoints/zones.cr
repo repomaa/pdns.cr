@@ -28,10 +28,10 @@ class Pdns::API
         delete("/#{id}", Nil)
       end
 
-      # Creates/modifies/deletes `RRsets`
+      # Creates/modifies/deletes `RRSet`s
       #
-      # Make sure to call `delete!` or `replace!` on existing `RRSets`
-      def edit_rrsets(id, &block : Array(RRset) ->) : Nil
+      # Make sure to call `delete!` or `replace!` on existing `RRSet`s
+      def edit_rrsets(id, &block : Array(RRSet) ->) : Nil
         zone = get(id)
         rrsets = zone.rrsets || [] of RRSet
 
