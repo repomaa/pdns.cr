@@ -30,7 +30,7 @@ class Pdns::API
       end
 
       # Delete the TSIG Key with *id*
-      def delete(id : String)
+      def delete(id : String) : Void
         delete("/#{id}", Nil)
       end
     end

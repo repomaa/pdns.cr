@@ -19,19 +19,19 @@ class Pdns::API
       end
 
       # Get a zone managed by a server
-      def get(id) : Zone
+      def get(id : String) : Zone
         get("/#{id}", Zone)
       end
 
       # Deletes this zone, all attached metadata and rrsets.
-      def delete(id) : Nil
+      def delete(id : String) : Void
         delete("/#{id}", Nil)
       end
 
       # Creates/modifies/deletes `RRSet`s
       #
       # Make sure to call `delete!` or `replace!` on existing `RRSet`s
-      def edit_rrsets(id, &block : Array(RRSet) ->) : Nil
+      def edit_rrsets(id : String, &block : Array(RRSet) ->) : Void
         zone = get(id)
         rrsets = zone.rrsets || [] of RRSet
 
@@ -52,7 +52,7 @@ class Pdns::API
       # of `secure-zone` and `rectify-zone` (if *api_rectify* is set to
       # `true`). This also applies to newly created zones. If *presigned* is
       # true, no DNSSEC changes will be made to the zone or cryptokeys.
-      def edit_metadata(id, &block : Zone ->) : Nil
+      def edit_metadata(id : String, &block : Zone ->) : Void
         zone = get(id)
         yield zone
         patched_zone = Zone.new(
@@ -79,7 +79,7 @@ class Pdns::API
       #
       # Fails when zone kind is not Slave, or slave is disabled in the
       # configuration.
-      def axfr_retrieve(id)
+      def axfr_retrieve(id : String) : Void
         put("/#{id}/axfr-retrieve", String)
       end
 
@@ -87,12 +87,12 @@ class Pdns::API
       #
       # Fails when zone kind is not Master or Slave, or master and slave are
       # disabled in the configuration. Only works for Slave if renotify is on.
-      def notify(id)
+      def notify(id : String) : Void
         put("/#{id}/notify", String)
       end
 
       # Returns the zone in AXFR format.
-      def export(id) : String
+      def export(id : String) : String
         get("/#{id}/export", String)
       end
 
@@ -100,7 +100,7 @@ class Pdns::API
       #
       # This does not take into account the API-RECTIFY metadata. Fails on
       # slave zones and zones that do not have DNSSEC.
-      def rectify(id) : String
+      def rectify(id : String) : Void
         put("/#{id}/rectify", String)
       end
 

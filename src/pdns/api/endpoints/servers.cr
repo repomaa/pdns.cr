@@ -9,6 +9,7 @@ require "./cache"
 class Pdns::API
   module Endpoints
     class Servers < Endpoint
+      # :inherit:
       def initialize(api)
         super(api, "/servers")
       end

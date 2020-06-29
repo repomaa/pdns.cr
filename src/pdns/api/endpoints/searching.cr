@@ -11,7 +11,7 @@ class Pdns::API
       # can be used in *query* as a wildcard character and the `?` character
       # can be used as a wildcard for a single character.
       def search(
-        query, *,
+        query : String, *,
         max : Int32? = nil,
         object_type : String? = nil
       ) : Array(SearchResult)

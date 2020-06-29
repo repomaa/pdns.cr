@@ -19,22 +19,22 @@ class Pdns::API
       # generated based on the `default-ksk-algorithm` and `default-ksk-size`
       # settings for a `"ksk"` *key_type* and the `default-zsk-algorithm` and
       # `default-zsk-size` options for a `"zsk"` *key_type*.
-      def create(cryptokey : Cryptokey)
+      def create(cryptokey : Cryptokey) : Cryptokey
         post("/", Cryptokey, cryptokey)
       end
 
       # This method activates a key from zone_name specified by cryptokey_id
-      def activate(id : Int32)
+      def activate(id : Int32) : Void
         put("/#{id}", String, Cryptokey.new(active: true))
       end
 
       # This method deactivates a key from zone_name specified by cryptokey_id
-      def deactivate(id : Int32)
+      def deactivate(id : Int32) : Void
         put("/#{id}", String, Cryptokey.new(active: false))
       end
 
       # This method deletes a key specified by cryptokey_id.
-      def delete(id : Int32)
+      def delete(id : Int32) : Void
         delete("/#{id}", Nil)
       end
 

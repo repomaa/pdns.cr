@@ -10,7 +10,7 @@ class Pdns::API
       end
 
       # Creates a set of metadata entries
-      def create(metadata : Pdns::Metadata)
+      def create(metadata : Pdns::Metadata) : Void
         post("/", Nil, metadata, Nil)
       end
 
@@ -27,7 +27,7 @@ class Pdns::API
       end
 
       # Delete all items of a single kind of domain metadata.
-      def delete(kind : String)
+      def delete(kind : String) : Void
         delete("/#{kind}", String)
       end
     end
