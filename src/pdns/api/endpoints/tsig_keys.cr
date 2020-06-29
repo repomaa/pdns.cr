@@ -23,7 +23,7 @@ class Pdns::API
       end
 
       # Edit a TSIG Key
-      def edit(id : String) : TSIGKey
+      def edit(id : String, &block : TSIGKey ->) : TSIGKey
         key = get(id)
         yield key
         put("/#{id}", TSIGKey, key)

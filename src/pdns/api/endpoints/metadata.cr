@@ -20,7 +20,7 @@ class Pdns::API
       end
 
       # Replace the content of a single kind of domain metadata.
-      def edit(kind : String) : Pdns::Metadata
+      def edit(kind : String, &block : Pdns::Metadata ->) : Pdns::Metadata
         metadata = get(kind)
         yield metadata
         put("/#{kind}", Pdns::Metadata, metadata)

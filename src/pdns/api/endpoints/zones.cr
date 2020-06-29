@@ -29,7 +29,7 @@ class Pdns::API
       # Creates/modifies/deletes `RRsets`
       #
       # Make sure to call `delete!` or `replace!` on existing `RRSets`
-      def edit_rrsets(id) : Nil
+      def edit_rrsets(id, &block : Array(RRset) ->) : Nil
         zone = get(id)
         rrsets = zone.rrsets || [] of RRSet
 
@@ -50,7 +50,7 @@ class Pdns::API
       # of `secure-zone` and `rectify-zone` (if *api_rectify* is set to
       # `true`). This also applies to newly created zones. If *presigned* is
       # true, no DNSSEC changes will be made to the zone or cryptokeys.
-      def edit_metadata(id) : Nil
+      def edit_metadata(id, &block : Zone ->) : Nil
         zone = get(id)
         yield zone
         patched_zone = Zone.new(
