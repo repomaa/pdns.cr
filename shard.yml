@@ -1,8 +1,8 @@
 name: pdns
-version: 0.1.0
+version: 0.1.1
 
 authors:
-  - your-name-here <your-email-here>
+  - Joakim Repomaa <shards@j.repomaa.com>
 
 crystal: 0.35.1
 
